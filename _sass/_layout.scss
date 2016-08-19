@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -167,9 +166,6 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
-}
 
 .page-heading {
     font-size: 20px;
@@ -214,7 +210,7 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin: $spacing-unit 0;
 
     h2 {
         font-size: 32px;

@@ -1,8 +1,15 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+dash-title: "Welcome-to-Jekyll"
 date:   2016-08-17 00:47:03 -0700
 categories: jekyll update
+primary-image: "heading.jpg"
+author: Ray Krow
+intro: > # "tag:"
+  The first test that will indicate awesome things
+  to come in the future
+tag: newtag
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
