@@ -1,0 +1,24 @@
+//
+//
+//  Styles for post list on home page
+//
+//
+
+.home ul.post-list {
+    > li {
+        width: 50%;
+        float: left;
+        &:nth-child(even) {
+            padding-left: 15px;
+        }
+        &:nth-child(odd) {
+            padding-right: 15px;
+        }
+        img {
+            height: 180px;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+    }
+}
