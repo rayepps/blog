@@ -6,6 +6,11 @@ date:   2016-08-19 00:47:03 -0700
 categories: General Posts
 primary-image: "heading.jpg"
 author: Ray Krow
+author-image: ray-krow.jpg
+author-bio: > # "intro:"
+  Ray is an author, he authors, its what he does,
+  if feels sweet, and rich, and creamy. You're
+  gonna like the way you code, I promises it.
 intro: > # "tag:"
   The first test that will indicate awesome things
   to come in the future

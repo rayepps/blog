@@ -1,0 +1,25 @@
+<div class="rb-wrapper">
+    <div class="rb-post-author">
+
+        <div style="background-image: url(/images/authors/{{ page.author-image }}/)"></div>
+        <span>{{ page.author }}</span>
+        <ul class="rb-post-author-social">
+            {% if page.author-github %}
+            <li><a href="github.com/{{ page.author-github }}">github</a></li>
+            {% endif %}
+            {% if page.author-facebook %}
+            <li><a href="facebook.com/{{ page.author-facebook }}">facebook</a></li>
+            {% endif %}
+            {% if page.author-twitter %}
+            <li><a href="twitter.com/{{ page.author-twitter }}">twitter</a></li>
+            {% endif %}
+            {% if page.author-instagram %}
+            <li><a href="instagram.com/{{ page.author-instagram }}">instagram</a></li>
+            {% endif %}
+            {% if page.author-linkedin %}
+            <li><a href="linkedin.com/{{ page.author-linkedin }}">linkedin</a></li>
+            {% endif %}
+        </ul>
+        <p>{{ page.author-bio }}</p>
+    </div>
+</div>

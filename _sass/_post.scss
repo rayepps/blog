@@ -1,0 +1,58 @@
+//
+//
+//  General Styles for Posts
+//
+//
+
+$rb-post-author-img-size: 200px;
+
+.rb-post {
+
+    .rb-post-content {
+        margin: 60px 0;
+        > p {
+            @include rb-wrapper();
+        }
+        > figure > pre {
+            @include rb-wrapper();
+        }
+    }
+
+    .rb-post-author {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        span {
+            font-size: 26px;
+        }
+        div {
+            width: $rb-post-author-img-size;
+            height: $rb-post-author-img-size;
+            border-radius: 50%;
+            background-position: center center;
+            background-size: cover;
+            margin: 0 auto;
+        }
+        p {
+            width: 40%;
+            margin: 0 auto;
+            font-size: 15px;
+            color: $grey-color;
+        }
+
+        .rb-post-author-social {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                flex: 0 1 auto;
+                margin: 0 4px;
+            }
+        }
+    }
+
+
+
+}

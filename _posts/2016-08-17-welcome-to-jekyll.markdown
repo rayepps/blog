@@ -6,11 +6,17 @@ date:   2016-08-17 00:47:03 -0700
 categories: jekyll update
 primary-image: "heading.jpg"
 author: Ray Krow
+author-image: ray-krow.jpg
+author-bio: > # "intro:"
+  Ray is an author, he authors, its what he does,
+  if feels sweet, and rich, and creamy. You're
+  gonna like the way you code, I promises it.
 intro: > # "tag:"
   The first test that will indicate awesome things
   to come in the future
 tag: newtag
 ---
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.

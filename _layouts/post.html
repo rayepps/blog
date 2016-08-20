@@ -3,11 +3,15 @@ layout: default
 ---
 <div class="rb-post">
     {% include post-heading.html %}
-    <div class="wrapper">
+    <div>
         <article itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="post-content" itemprop="articleBody">
+            <div class="rb-post-content" itemprop="articleBody">
                 {{ content }}
             </div>
         </article>
+        <div class="rb-wrapper">
+            <span>The End</span>
+        </div>
+        {% include author.html %}
     </div>
 </div>
