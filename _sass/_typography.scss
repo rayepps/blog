@@ -1,0 +1,15 @@
+//
+//
+//  Font Styles
+//
+//
+
+// Removed custom font for improved 
+// @font-face {
+//     font-family: 'rochester';
+//     src: url('..//rochester.otf');
+// }
+
+@mixin script-font {
+    font-family: "Brush Script MT", cursive;
+}

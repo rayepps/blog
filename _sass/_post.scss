@@ -53,6 +53,14 @@ $rb-post-author-img-size: 200px;
         }
     }
 
+    .rb-the-end {
+        text-align: center;
+        span {
+            font-size: 45px;
+            @include script-font();
+        }
+    }
+
 
 
 }
