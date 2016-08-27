@@ -165,7 +165,7 @@ mapper.CreateMap<PersonViewModel, PersonModel>()
 
 The problem is in line 4 and 5. Were trying to access the property of an object that has not been instantiated. If you try this AutoMapper will yell at you with an exception at runtime. Let's solve this with both a Type Converter and a Value Resolver and take a look at the differences.
 
-### Type Converter
+### Custom Type Converters
 A type converter will always inherit from AutoMapper's `ITypeConverter`. You will pass it the destination and source types when you inherit `ITypeConverter<sourceType, destType>`. Lastly, AutoMapper expects you to implement a Convert method that has a return type of DestType and is passed `Convert(SourceType source, DestType dest, ResolutionContext context)` so that it can call your converter. That was horribly confusing, allow the code to explain.
 
 {% highlight csharp %}
@@ -203,7 +203,9 @@ PersonModel person = Mapper.Map<PersonModel>(personViewModel)
 
 The nice thing about Type Converters is that you only have to declare it in the mapping a single time but use it as much as you need. Once the mapper is aware of the converter you want to use when mapping two specific objects it will always use it anytime it needs to map two items of those types.
 
-### Value Resolver
+As always I reccommend you at least overlook the official documentation on the [AutoMapper wiki](https://github.com/AutoMapper/AutoMapper/wiki/Custom-type-converters).
+
+### Custom Value Resolvers
 A Value Resolver is mostly different from a Type Converter in the fact that it needs to be called for usage each and every time it is needed. Although this may sound like a turn off, I actually prefer it because it helps keep mapping files that can be hundreds of lines long and broken into multiple files understandable when each and every mapping is strongly declared how it is mapped in every line. The Value Resolver is implemented in almost exactly the same manner as the Type Converter except it also requires the type of the specific member it is converting to be passed to the parent class `IValueResolver` as well as also passing that member to the `Resolve()` method. Again, the code explains far better.
 
 {% highlight csharp %}
@@ -224,10 +226,6 @@ Converting our Person models it looks like this. I'd like to note, one of the up
 
 public class PersonInfoResolver : IValueResolver<PersonViewModel, PersonModel, Contact>
 {
-    public PersonInfoResolver()
-    {
-    }
-
     public Contact Resolve(PersonViewModel source, PersonModel destination, Contact destMember, ResolutionContext context)
     {
         return new Contact {
@@ -253,5 +251,10 @@ PersonModel person = Mapper.Map<PersonModel>(personViewModel)
 
 {% endhighlight %}
 
+As always I reccommend you at least overlook the official documentation on the [AutoMapper wiki](https://github.com/AutoMapper/AutoMapper/wiki/Custom-value-resolvers).
+
 ### The Big Difference Between Resolvers and Converters
 You can declare a Type Converter once and AutoMapper will always there after use it when mapping those types without having to again be told to use it. A Value Converter on the other hand needs to be mentioned specifically each and every time you would like to use it.
+
+## Meet The Maker
+I can only tell you what I know. Jimmy Bogart is the creator of AutoMapper and he keeps up a pretty great and informational [blog](https://lostechies.com/jimmybogard/category/automapper/) about it. Go see it.

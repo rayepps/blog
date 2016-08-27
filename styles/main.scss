@@ -46,16 +46,15 @@ $on-laptop:        800px;
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "jekyll/base",
-        "jekyll/layout",
-        "jekyll/syntax-highlighting",
-        "typography",
-        "layout",
-        "post-heading",
-        "index-list",
-        "post",
-        "code",
-        "footer"
+@import "jekyll/base";
+@import "jekyll/layout";
+@import "jekyll/syntax-highlighting";
 
-;
+@import "typography";
+@import "layout";
+@import "post-heading";
+@import "index-list";
+@import "post";
+@import "code";
+@import "footer";
+@import "icon";

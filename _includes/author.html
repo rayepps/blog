@@ -8,8 +8,8 @@
         <ul class="rb-post-author-social">
             {% for social in author.social %}
             <li>
-                <a href="github.com/{{ page.author-github }}">
-                    <span class="icon icon-{{ social.name }}">{{ social.name }}</span>
+                <a href="{{ social.url }}">
+                    <img class="rb-icon-interact rb-icon rb-icon-{{ social.name }}" src="/images/social/social_{{ social.name }}.png" />
                 </a>
             </li>
             {% endfor %}
