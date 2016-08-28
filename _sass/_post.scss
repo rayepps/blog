@@ -10,11 +10,14 @@ $rb-post-author-img-size: 200px;
 
     .rb-post-content {
         margin: 60px 0;
-        > p {
+        > p,
+        > figure > pre,
+        h2, h3, h4, h5, h6 {
             @include rb-wrapper();
         }
-        > figure > pre {
-            @include rb-wrapper();
+        > blockquote {
+            @include rb-wrapper-inner();
+            // padding: 0 30px;
         }
     }
 

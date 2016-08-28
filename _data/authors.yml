@@ -1,0 +1,26 @@
+ray_krow:
+  name: Ray Krow
+  image: ray_krow.jpg
+  bio: > # "social:"
+    Software Engineer, Web Developer, Creative Designer,
+    Entrepenouer, Christ Follower. Ray loves technology, optimization,
+    and beautiful design in every way. Especially when they all comes
+    together into a single solution.
+  social:
+    - name: github
+      url: ray-krow
+
+    - name: twitter
+      url: unknown
+
+    - name: facebook
+      url: unknown
+
+    - name: instagram
+      url: unknown
+
+    - name: stackoverflow
+      url: unknown
+
+    - name: linkedin
+      url: unknown
