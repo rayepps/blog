@@ -12,7 +12,7 @@ description: > # "baseurl:"
   I'm Ray Krow, a tech obsessed software engineer, and this is my
   slice of the internet I've cut out for a personal blog. You can
   find information on frameworks and tooling for C# and .NET,
-  Javascript, HTML, CSS, Python, Flask, and most anything else
+  Javascript, HTML, CSS, Python and Flask, and most anything else
   web related.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://krow.tech" # the base hostname & protocol for your site
