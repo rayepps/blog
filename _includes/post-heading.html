@@ -1,7 +1,7 @@
 
 
 <header class="rb-post-heading" style="background-image: url(/images/posts/{{ page.dash-title }}/{{ page.primary-image }});">
-    <div class="wrapper">
+    <div class="wrapper rb-post-heading-title">
         <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
         <p class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -11,5 +11,10 @@
                 <span itemprop="name">{{ site.data.authors[page.author].name }}</span>
             </span>
         </p>
+    </div>
+    <div class="rb-img-credit">
+      <a href="{{ page.photo_credit_url }}">
+        Photo Credit
+      </a>
     </div>
 </header>

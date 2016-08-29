@@ -4,6 +4,7 @@ title:  "Essentials of AutoMapper"
 dash-title: "Essentials-of-AutoMapper"
 date:   2016-07-14 00:47:03 -0700
 primary-image: "heading.jpg"
+photo_credit_url: "https://unsplash.com/search/map?photo=RFId0_7kep4"
 author: ray_krow
 intro: > # "tag:"
   AutoMapper is an amazing tool but it takes organization and

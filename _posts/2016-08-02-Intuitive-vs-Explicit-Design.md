@@ -4,6 +4,7 @@ title:  "Intuitive VS Explicit Design"
 dash-title: "Intuitive-vs-Explicit-Design"
 date:   2016-08-02 00:47:03 -0700
 primary-image: "heading.jpg"
+photo_credit_url: "https://unsplash.com/photos/DtDlVpy-vvQ"
 author: ray_krow
 intro: > # "tag:"
   Users don't want to be confused but they also don't want
