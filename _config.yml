@@ -15,6 +15,7 @@ description: > # "baseurl:"
   Javascript, HTML, CSS, Python and Flask, and most anything else
   web related.
 baseurl: "" # the subpath of your site, e.g. /blog
+source_url: "https://github.com/raykrow/raykrow.github.io"
 url: "http://krow.tech" # the base hostname & protocol for your site
 github_username: raykrow
 

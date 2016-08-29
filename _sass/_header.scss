@@ -1,0 +1,16 @@
+//
+//
+//  Header Styles
+//
+//
+
+.rb-header {
+  .rb-nav-github {
+    float: right;
+    > img {
+      height: 30px;
+      padding: ((56px - 30px) / 2) 0;
+      width: auto;
+    }
+  }
+}
