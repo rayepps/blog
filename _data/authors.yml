@@ -8,6 +8,22 @@ ray_krow:
     together into a single solution.
   social:
     - name: github
+      url: "https://github.com/raykrow"
+
+    - name: linkedin
+      url: "https://www.linkedin.com/in/raymond-krow-8497849b"
+
+
+sample_author:
+  name: Ray Krow
+  image: ray_krow.jpg
+  bio: > # "social:"
+    Software Engineer, Web Developer, Creative Designer,
+    Entrepenouer, Christ Follower. Ray loves technology, optimization,
+    and beautiful design in every way. Especially when they all comes
+    together into a single solution.
+  social:
+    - name: github
       url: ray-krow
 
     - name: twitter
