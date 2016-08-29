@@ -2,7 +2,7 @@
 layout: post
 title:  "Intuitive VS Explicit Design"
 dash-title: "Intuitive-vs-Explicit-Design"
-date:   2016-08-17 00:47:03 -0700
+date:   2016-08-02 00:47:03 -0700
 primary-image: "heading.jpg"
 author: ray_krow
 intro: > # "tag:"

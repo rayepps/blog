@@ -2,7 +2,7 @@
 layout: post
 title:  "Essentials of AutoMapper"
 dash-title: "Essentials-of-AutoMapper"
-date:   2016-08-17 00:47:03 -0700
+date:   2016-07-14 00:47:03 -0700
 primary-image: "heading.jpg"
 author: ray_krow
 intro: > # "tag:"
