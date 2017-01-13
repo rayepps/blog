@@ -1,0 +1,15 @@
+//
+//
+//    About Page Styles
+//
+//
+
+.rb-about-images {
+
+  @include rb-wrapper();
+  > img {
+    height: 200px;
+    width: auto;
+    padding-top: 12px;
+  }
+}

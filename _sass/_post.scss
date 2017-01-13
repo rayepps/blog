@@ -15,6 +15,12 @@ $rb-post-author-img-size: 200px;
         h2, h3, h4, h5, h6 {
             @include rb-wrapper();
         }
+        h2 {
+          padding-top: 52px;
+          &:first-child {
+            padding-top: 12px;
+          }
+        }
         > blockquote {
             @include rb-wrapper-inner();
             // padding: 0 30px;

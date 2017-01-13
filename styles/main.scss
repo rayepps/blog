@@ -50,6 +50,8 @@ $on-laptop:        800px;
 @import "jekyll/layout";
 @import "jekyll/syntax-highlighting";
 
+
+@import "base-global-clear";
 @import "typography";
 @import "layout";
 @import "post-heading";
@@ -60,3 +62,4 @@ $on-laptop:        800px;
 @import "icon";
 @import "links-buttons";
 @import "header";
+@import "about";

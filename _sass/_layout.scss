@@ -41,3 +41,7 @@
 .rb-wrapper {
     @include rb-wrapper();
 }
+
+.pull-right {
+  float: right;
+}
