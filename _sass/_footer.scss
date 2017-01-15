@@ -5,19 +5,18 @@
 //
 
 
-.rb-footer {
-    font-size: 15px;
-    color: $grey-color;
-}
-
 footer {
-    ul > li {
-      text-align: right;
-      a {
-        color: $grey-color;
-        &:visited {
-          color: lighten($grey-color, 10%);
-        }
+  @include rb-gradient;
+  p {
+    color: #ffffff;
+  }
+  ul > li {
+    text-align: right;
+    a {
+      color: #ffffff;
+      &:visited {
+        color: #e8e8e8;
       }
     }
+  }
 }

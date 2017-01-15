@@ -5,6 +5,11 @@
 //
 
 .rb-header {
+  @include rb-gradient;
+
+  .rb-header-title {
+    color: #ffffff;
+  }
   .rb-nav-github {
     float: right;
     > img {

@@ -1,0 +1,28 @@
+
+
+
+
+@-webkit-keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@mixin rb-gradient {
+  background: linear-gradient(270deg, #00BCD4, #C2185B);
+  background-size: 400% 400%;
+
+  -webkit-animation: gradient-animation 30s ease infinite;
+  -moz-animation: gradient-animation 30s ease infinite;
+  animation: gradient-animation 30s ease infinite;
+}
