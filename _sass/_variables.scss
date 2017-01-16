@@ -15,3 +15,52 @@ $rb-charcoal: #444444;
 $rb-primary-color: $rb-blue;
 $rb-secondary-color: darken($rb-blue, 8%);
 $rb-accent-color: $rb-orange;
+
+
+
+
+@function first($list) {
+  @return nth($list, 1);
+}
+
+@function last($list) {
+  @return nth($list, length($list));
+}
+
+
+// http://foundation.zurb.com/sites/docs/v/5.5.3/media-queries.html
+
+// Here we define the breakpoints which will become the upper border for each media size.
+// The function em-calc() calculates the em-value from a px-value.
+$small-breakpoint:  640px  !default;
+$medium-breakpoint: 1024px !default;
+$large-breakpoint:  1440px !default;
+$xlarge-breakpoint: 1920px !default;
+
+// Here we define the lower and upper bounds for each media size
+$small-range:   0, $small-breakpoint !default; /* 0, 640px */
+$medium-range:  $small-breakpoint, $medium-breakpoint !default; /* 641px, 1024px */
+$large-range:   $medium-breakpoint, $large-breakpoint  !default; /* 1025px, 1440px */
+$xlarge-range:  $large-breakpoint, $xlarge-breakpoint !default; /* 1441px, 1920px */
+$xxlarge-range: $xlarge-breakpoint, 999999px !default; /* 1921px, ... */
+
+// Media Queries
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$small-up: $screen !default;
+$small-only: "#{$screen} and (max-width: #{last($small-range)})" !default;
+
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})" !default;
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{last($medium-range)})" !default;
+
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})" !default;
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{last($large-range)})" !default;
+
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{last($xlarge-range)})" !default;
+
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})" !default;
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{last($xxlarge-range)})" !default;

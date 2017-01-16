@@ -27,5 +27,10 @@ $rb-post-col-space: 15px;
         h2 {
             margin-bottom: 5px;
         }
+
+        @media #{$small-only} {
+            width: 98%;
+            width: calc(100% - #{$rb-post-col-space});
+        }
     }
 }
