@@ -4,6 +4,10 @@
 //
 //
 
+html {
+  font-size: 12px;
+}
+
 h1,h2,h3,h4,h5,h6, title {
   font-family: $rb-title-font;
 }
@@ -11,4 +15,10 @@ h1,h2,h3,h4,h5,h6, title {
 p, span, div {
   font-family: $rb-body-font;
   color: $rb-charcoal;
+}
+
+p {
+  line-height:2em;
+  font-size: 1rem;
+  margin-top: 5px;
 }

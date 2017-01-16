@@ -9,21 +9,48 @@ $rb-post-author-img-size: 200px;
 .rb-post {
 
     .rb-post-content {
-        margin: 60px 0;
-        > p,
+        margin: 25px 0;
         > figure > pre,
         h2, h3, h4, h5, h6 {
             @include rb-wrapper();
+            margin-top: 2em;
+            margin-bottom: .3em;
+            line-height: 1.5em;
         }
-        h2 {
-          padding-top: 52px;
-          &:first-child {
-            padding-top: 12px;
-          }
+        > p {
+            @include rb-wrapper();
         }
         > blockquote {
             @include rb-wrapper-inner();
-            // padding: 0 30px;
+            margin-left: 30px;
+            border-left: 8px solid $rb-accent-color;
+            > p {
+                line-height:1.89em;
+                font-size: .92rem;
+                padding-top: 10px;
+                color: lighten($rb-charcoal, 8%);
+            }
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        h4 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            font-size: 1.62rem;
+        }
+        > a,
+        > p > a {
+            @extend .rb-link;
+        }
+
+        figure {
+            overflow-x: scroll;
+            span {
+                font-family: monospace;
+            }
         }
     }
 
@@ -31,8 +58,10 @@ $rb-post-author-img-size: 200px;
         margin-top: 60px;
         margin-bottom: 60px;
         text-align: center;
-        span {
-            font-size: 26px;
+        > span {
+            padding-top: 8px;
+            font-size: 2.3rem;
+            display: inline-block;
         }
         div {
             width: $rb-post-author-img-size;
@@ -43,7 +72,6 @@ $rb-post-author-img-size: 200px;
             margin: 0 auto;
         }
         p {
-            width: 40%;
             margin: 0 auto;
             font-size: 15px;
             color: $grey-color;
@@ -55,11 +83,14 @@ $rb-post-author-img-size: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 8px 0;
             li {
                 flex: 0 1 auto;
                 margin: 0 4px;
             }
         }
+
+
     }
 
     .rb-the-end {

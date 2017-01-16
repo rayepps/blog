@@ -5,15 +5,23 @@
 //
 
 // for buttons
-a.rb-button-link {
+.rb-button-link {
   padding: 6px;
 }
 
-a.rb-link {
+.rb-link {
   color: $rb-primary-color;
+  text-decoration: none;
   &:visited,
   &:active,
   &:hover {
     color: $rb-secondary-color;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
+
+

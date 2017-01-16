@@ -27,7 +27,12 @@ $rb-post-col-space: 15px;
         h2 {
             margin-bottom: 5px;
         }
-
+        .rb-post-date {
+            color: $rb-accent-color;
+            font-size: .87em;
+            display: block;
+            padding-top: 8px;
+        }
         @media #{$small-only} {
             width: 98%;
             width: calc(100% - #{$rb-post-col-space});

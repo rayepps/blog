@@ -1,3 +1,5 @@
+
+
 ray_krow:
   name: Ray Krow
   image: ray_krow.jpg
@@ -8,35 +10,10 @@ ray_krow:
     together into a single solution.
   social:
     - name: github
+      image_name: "github_grey"
       url: "https://github.com/raykrow"
 
     - name: linkedin
+      image_name: "linkedin"
       url: "https://www.linkedin.com/in/raymond-krow-8497849b"
 
-
-sample_author:
-  name: Ray Krow
-  image: ray_krow.jpg
-  bio: > # "social:"
-    A Software Engineer, Web Developer, Creative Designer,
-    Entrepenouer, and Christ Follower. I love technology, optimization,
-    and beautiful design in every way. Especially when they all comes
-    together into a single solution.
-  social:
-    - name: github
-      url: ray-krow
-
-    - name: twitter
-      url: unknown
-
-    - name: facebook
-      url: unknown
-
-    - name: instagram
-      url: unknown
-
-    - name: stackoverflow
-      url: unknown
-
-    - name: linkedin
-      url: unknown

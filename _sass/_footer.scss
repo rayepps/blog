@@ -7,15 +7,31 @@
 
 footer {
   @include rb-gradient;
+  @include rb-wrapper;
+  padding-top: 15px;
   p {
     color: #ffffff;
+    border-bottom: solid 1px #ffffff;
+    padding-bottom: 20px;
   }
-  ul > li {
-    text-align: right;
-    a {
-      color: #ffffff;
-      &:visited {
-        color: #e8e8e8;
+  ul {
+    padding-bottom: 20px;
+    > li {
+      text-align: center;
+      padding-bottom:8px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        &:visited {
+          color: #e8e8e8;
+        }
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
       }
     }
   }

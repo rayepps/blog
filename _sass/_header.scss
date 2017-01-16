@@ -7,14 +7,23 @@
 .rb-header {
   @include rb-gradient;
 
+  padding: 14px 18px;
+
   .rb-header-title {
     color: #ffffff;
+    font-family: $rb-title-font;
+    text-decoration: none;
+    font-size: 1.8em;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .rb-nav-github {
     float: right;
+    position: relative;
+    bottom: 4px;
     > img {
       height: 30px;
-      padding: ((56px - 30px) / 2) 0;
       width: auto;
     }
   }

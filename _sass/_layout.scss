@@ -4,6 +4,18 @@
 //
 //
 
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
 @mixin rb-wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -13,7 +25,7 @@
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @media #{$medium-up} {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
@@ -30,7 +42,7 @@
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @media #{$medium-up} {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
