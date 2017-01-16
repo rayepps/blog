@@ -19,7 +19,7 @@
 }
 
 @mixin rb-gradient {
-  background: linear-gradient(270deg, #00BCD4, #C2185B);
+  background: linear-gradient(270deg, #F44336, #00BCD4);
   background-size: 400% 400%;
 
   -webkit-animation: gradient-animation 30s ease infinite;
