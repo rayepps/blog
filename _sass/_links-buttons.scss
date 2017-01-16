@@ -4,6 +4,16 @@
 //
 //
 
+// for buttons
 a.rb-button-link {
   padding: 6px;
+}
+
+a.rb-link {
+  color: $rb-primary-color;
+  &:visited,
+  &:active,
+  &:hover {
+    color: $rb-secondary-color;
+  }
 }

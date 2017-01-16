@@ -4,4 +4,11 @@
 //
 //
 
+h1,h2,h3,h4,h5,h6, title {
+  font-family: $rb-title-font;
+}
 
+p, span, div {
+  font-family: $rb-body-font;
+  color: $rb-charcoal;
+}

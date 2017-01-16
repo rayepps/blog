@@ -4,6 +4,14 @@
 //
 //
 
-$body-font: 'Libre Baskerville', serif;
-$title-font: 'Josefin Slab', serif;
-$script-font: cursive;
+$rb-body-font: 'Libre Baskerville', serif;
+$rb-title-font: 'Josefin Slab', serif;
+$rb-script-font: cursive;
+
+$rb-blue: #00e0fd;
+$rb-orange: #F44336;
+$rb-charcoal: #444444;
+
+$rb-primary-color: $rb-blue;
+$rb-secondary-color: darken($rb-blue, 8%);
+$rb-accent-color: $rb-orange;
