@@ -8,20 +8,26 @@ $rb-post-heading-height: 500px;
 
 
 .rb-post-heading {
-  position: relative;
+    position: relative;
     width: 100%;
     background-size: cover;
     background-position: center center;
-    // background-attachment: fixed;
+    @media #{$medium-up} {
+      background-attachment: fixed;
+    }
    > div.rb-post-heading-title {
      margin: 0;
      padding: 20px 0;
     text-align: center;
+     @media #{$medium-up} {
+         padding-top: 100px;
+         padding-bottom: 100px;
+     }
     h1, p, span {
         color: white;
     }
     h1 {
-        font-size: 54px;
+        font-size: 5rem;
     }
     p {
         padding-top: 15px;

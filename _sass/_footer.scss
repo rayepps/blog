@@ -7,7 +7,6 @@
 
 footer {
   @include rb-gradient;
-  @include rb-wrapper;
 
   display: flex;
   justify-content: center;
@@ -19,6 +18,9 @@ footer {
     > img {
       height: 30px;
       width: auto;
+      @media #{$medium-up} {
+        height: 60px;
+      }
     }
   }
 }

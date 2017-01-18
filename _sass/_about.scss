@@ -4,12 +4,25 @@
 //
 //
 
-.rb-about-images {
+article {
+  .rb-about-images {
 
-  @include rb-wrapper();
-  > img {
-    height: 200px;
-    width: auto;
-    padding-top: 12px;
+    @include rb-wrapper();
+
+    > img {
+      height: 200px;
+      width: auto;
+      padding-top: 12px;
+
+      @media #{$medium-up} {
+        width: calc(33.333333% - 8px) !important;
+        float: left;
+        &:nth-child(2) {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+      }
+
+    }
   }
 }

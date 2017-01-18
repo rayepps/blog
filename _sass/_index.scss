@@ -17,6 +17,12 @@ $rb-post-col-space: 15px;
         padding-top: 10px;
         margin-top: 10px;
         color: $rb-charcoal;
+
+        @media #{$medium-up} {
+            padding-right: 0;
+            padding-left: 0;
+            margin-top: 40px;
+        }
     }
   ul.rb-post-list {
       > li {
@@ -31,6 +37,14 @@ $rb-post-col-space: 15px;
               width: 100%;
               overflow: hidden;
               object-fit: cover;
+
+              @media #{$small-only} {
+                  height: 250px;
+              }
+
+              @media #{$medium-up} {
+                  height: 400px;
+              }
           }
           h2 {
               margin-bottom: 9px;
@@ -46,6 +60,11 @@ $rb-post-col-space: 15px;
           .rb-post-date, h2, p {
               padding-left: $rb-global-page-margin / 2;
               padding-right: $rb-global-page-margin / 2;
+
+              @media #{$medium-up} {
+                  padding-right: 0;
+                  padding-left: 0;
+              }
           }
       }
   }

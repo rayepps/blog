@@ -17,6 +17,12 @@ $rb-post-author-img-size: 200px;
             margin-bottom: .3em;
             line-height: 1.5em;
         }
+        h2 {
+            font-size: 1.3rem;
+            @media #{$medium-up} {
+                font-size: 1.89rem;
+            }
+        }
         > p {
             @include rb-wrapper();
         }

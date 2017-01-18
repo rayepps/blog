@@ -6,7 +6,6 @@
 
 .rb-header {
   @include rb-gradient;
-  @include rb-wrapper;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -19,6 +18,9 @@
     font-size: 1.8em;
     &:hover {
       text-decoration: underline;
+    }
+    @media #{$medium-up} {
+      font-size: 2.3em;
     }
   }
   $rb-rotation-time: .5s;
@@ -33,6 +35,10 @@
 
     > i {
       color: #ffffff;
+    }
+
+    @media #{$medium-up} {
+      display: none;
     }
 
   }
@@ -69,6 +75,27 @@
           font-weight: bold;
           font-size: 1.7em;
         }
+      }
+
+      @media #{$medium-up} {
+        height: auto;
+        width: auto;
+        text-align: right;
+        display: block;
+        float: right;
+
+        position: relative;
+        top: 5px;
+
+        > li {
+          opacity: 1;
+          padding: 4px 0 4px 15px;
+          float: right;
+          > a {
+            font-size: 1em;
+          }
+        }
+
       }
     }
   }

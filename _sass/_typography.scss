@@ -22,3 +22,13 @@ p {
   font-size: 1rem;
   margin-top: 5px;
 }
+
+@media #{$medium-up} {
+  html {
+    font-size: 16px;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 2.2em;
+  }
+}
