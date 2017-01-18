@@ -91,4 +91,14 @@ body.rb-show-mobile-menu {
       }
     }
   }
+
+  // could do the hididng of elements while
+  // header is open this way, however can't
+  // get the timing right so put logic in js
+
+  //> footer,
+  //> div,
+  //> section {
+  //  display: none;
+  //}
 }

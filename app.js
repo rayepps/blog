@@ -32,7 +32,9 @@ let krow = {
         } else {
             let ulHeight = window.innerHeight - krow.$menu.offset().top;
             krow.$menu.css('height', ulHeight);
-            krow.hideAll(krow.$getBodyElems());
+            window.setTimeout(function() {
+                krow.hideAll(krow.$getBodyElems());
+            }, 505);
         }
 
         krow.$body.toggleClass(krow.menuActiveClass);

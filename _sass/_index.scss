@@ -9,6 +9,9 @@ $rb-post-col-space: 15px;
 .rb-page-home {
     @include rb-wrapper();
 
+    padding-right: 0;
+    padding-left: 0;
+
     .rb-site-intro {
         padding: 0 $rb-global-page-margin / 2;
         padding-top: 10px;

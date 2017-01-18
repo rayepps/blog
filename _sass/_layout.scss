@@ -17,15 +17,13 @@
 }
 
 @mixin rb-wrapper {
-    //max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
-    //max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
-    //margin-right: auto;
-    //margin-left: auto;
-    //padding-right: $rb-global-page-margin;
-    //padding-left: $rb-global-page-margin;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
+    max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $rb-global-page-margin;
+    padding-left: $rb-global-page-margin;
+
     @extend %clearfix;
 
     @media #{$medium-up} {
