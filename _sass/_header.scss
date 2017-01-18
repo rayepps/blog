@@ -7,9 +7,10 @@
 .rb-header {
   @include rb-gradient;
 
-  padding: 14px 18px;
+  padding: 30px $rb-global-page-margin / 2;
 
   .rb-header-title {
+    float: left;
     color: #ffffff;
     font-family: $rb-title-font;
     text-decoration: none;
@@ -18,13 +19,76 @@
       text-decoration: underline;
     }
   }
-  .rb-nav-github {
+  $rb-rotation-time: .5s;
+  .rb-header-menu-icon-container {
+
     float: right;
-    position: relative;
-    bottom: 4px;
-    > img {
-      height: 30px;
-      width: auto;
+    transition: transform $rb-rotation-time ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    > i {
+      color: #ffffff;
+    }
+
+  }
+
+  .rb-header-menu {
+
+
+    ul {
+
+      height: 0;
+
+      text-align: center;
+      width: 100%;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      transition: height $rb-rotation-time ease;
+
+      > li {
+        opacity: 0;
+        text-align: center;
+        flex: 0 1 auto;
+        padding: 20px 0;
+
+        transition: opacity $rb-rotation-time ease-out;
+
+        > a {
+          color: #ffffff !important;
+          text-decoration: none;
+          font-family: $rb-title-font;
+          font-weight: bold;
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+
+}
+
+body.rb-show-mobile-menu {
+  .rb-header {
+    overflow: hidden;
+    padding-bottom: 0;
+    .rb-header-menu-icon-container {
+      transform: rotate(90deg);
+    }
+
+    .rb-header-menu {
+
+      ul {
+        // ul gets height 100% of window in app.js
+        > li {
+          opacity: 1;
+        }
+      }
     }
   }
 }

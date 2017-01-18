@@ -11,27 +11,15 @@ $rb-script-font: cursive;
 $rb-blue: #00e0fd;
 $rb-orange: #F44336;
 $rb-charcoal: #444444;
+$rb-light-charcoal: #828282;
 
 $rb-primary-color: $rb-blue;
 $rb-secondary-color: darken($rb-blue, 8%);
 $rb-accent-color: $rb-orange;
 
+$rb-content-width: 800px; // Page content width
+$rb-global-page-margin: 30px;
 
-// <JEKYLL> From Jekyll
-// Width of the content area
-$content-width:    800px;
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-
-// </JEKYLL> End From Jekyll
 
 
 

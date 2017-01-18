@@ -17,36 +17,39 @@
 }
 
 @mixin rb-wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    //max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
+    //max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
+    //margin-right: auto;
+    //margin-left: auto;
+    //padding-right: $rb-global-page-margin;
+    //padding-left: $rb-global-page-margin;
+    width: 100%;
+    padding: 0;
+    margin: 0;
     @extend %clearfix;
 
     @media #{$medium-up} {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin}));
+        max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin}));
+        padding-right: $rb-global-page-margin / 2;
+        padding-left: $rb-global-page-margin / 2;
     }
 }
 
 @mixin rb-wrapper-inner {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 4));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 4));
+    max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 4));
+    max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 4));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: $rb-global-page-margin;
+    padding-left: $rb-global-page-margin;
     @extend %clearfix;
 
     @media #{$medium-up} {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
+        max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin}));
+        max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin}));
+        padding-right: $rb-global-page-margin / 2;
+        padding-left: $rb-global-page-margin / 2;
     }
 }
 
