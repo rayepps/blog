@@ -6,8 +6,10 @@
 
 .rb-header {
   @include rb-gradient;
+  @include rb-wrapper;
 
-  padding: 30px $rb-global-page-margin / 2;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .rb-header-title {
     float: left;
