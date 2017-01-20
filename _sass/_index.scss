@@ -34,7 +34,6 @@ $rb-post-col-space: 15px;
 
           img {
               height: 180px;
-              // border-radius: 4px;
               width: 100%;
               overflow: hidden;
               object-fit: cover;
@@ -45,6 +44,7 @@ $rb-post-col-space: 15px;
 
               @media #{$medium-up} {
                   height: 400px;
+                  border-radius: 4px;
               }
           }
           h2 {

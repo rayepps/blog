@@ -79,6 +79,9 @@ $rb-menu-drop-time: .5s;
           font-family: $rb-title-font;
           font-weight: bold;
           font-size: 1.7em;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
