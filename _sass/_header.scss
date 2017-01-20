@@ -4,11 +4,16 @@
 //
 //
 
+$rb-menu-drop-time: .5s;
+
 .rb-header {
   @include rb-gradient;
 
   padding-top: 30px;
   padding-bottom: 30px;
+  overflow: hidden;
+
+  transition: padding-bottom $rb-menu-drop-time ease;
 
   .rb-header-title {
     float: left;
@@ -23,11 +28,11 @@
       font-size: 2.3em;
     }
   }
-  $rb-rotation-time: .5s;
+
   .rb-header-menu-icon-container {
 
     float: right;
-    transition: transform $rb-rotation-time ease;
+    transition: transform $rb-menu-drop-time ease;
 
     &:hover {
       cursor: pointer;
@@ -58,7 +63,7 @@
       align-items: center;
       justify-content: center;
 
-      transition: height $rb-rotation-time ease;
+      transition: height $rb-menu-drop-time ease-out;
 
       > li {
         opacity: 0;
@@ -66,7 +71,7 @@
         flex: 0 1 auto;
         padding: 20px 0;
 
-        transition: opacity $rb-rotation-time ease-out;
+        transition: opacity $rb-menu-drop-time ease-out;
 
         > a {
           color: #ffffff !important;
@@ -104,7 +109,6 @@
 
 body.rb-show-mobile-menu {
   .rb-header {
-    overflow: hidden;
     padding-bottom: 0;
     .rb-header-menu-icon-container {
       transform: rotate(90deg);

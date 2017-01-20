@@ -27,14 +27,16 @@ let krow = {
         let menuIsVisible = krow.$body.hasClass(krow.menuActiveClass);
 
         if (menuIsVisible) {
+            // Its visible, hide it
             krow.showAll(krow.$getBodyElems());
             krow.$menu.css('height', 0);
         } else {
-            let ulHeight = window.innerHeight - krow.$menu.offset().top;
-            krow.$menu.css('height', ulHeight);
+            // Its hidden, show it
+            let menuHeight = window.innerHeight - krow.$menu.offset().top;
+            krow.$menu.css('height', menuHeight);
             window.setTimeout(function() {
                 krow.hideAll(krow.$getBodyElems());
-            }, 505);
+            }, 505); // CSS animation to change height takes 500ms, so 5ms after the menu is shown, we hide the page to lock scroll
         }
 
         krow.$body.toggleClass(krow.menuActiveClass);
