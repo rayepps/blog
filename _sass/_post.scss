@@ -81,6 +81,11 @@ $rb-post-author-img-size: 200px;
             margin: 0 auto;
             font-size: 15px;
             color: $rb-light-charcoal;
+
+            @media #{$medium-up} {
+              max-width: 540px;
+            }
+
         }
 
         .rb-post-author-social {
@@ -93,6 +98,9 @@ $rb-post-author-img-size: 200px;
             li {
                 flex: 0 1 auto;
                 margin: 0 4px;
+                &:hover {
+                  cursor: pointer;
+                }
             }
         }
 

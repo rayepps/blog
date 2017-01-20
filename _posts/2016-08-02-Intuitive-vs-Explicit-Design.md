@@ -9,7 +9,7 @@ author: ray_krow
 intro: > # "tag:"
   Users don't want to be confused but they also don't want
   to be bombarded with so many directions its even more
-  confusing. Let's find a balance. Hint: Intuitive wins.
+  confusing. Let's find a balance.
 tags:
   - title: UI/UX
   - title: Design

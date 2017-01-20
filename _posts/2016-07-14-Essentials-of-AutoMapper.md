@@ -154,7 +154,7 @@ To be upfront and honest. There are ways to do this without a Value Resolver or 
 Incase you don't understand why we can't simply map these like before I wan't to point it out.
 
 
-{% highlight csharp linenos %}
+{% highlight csharp %}
 
 // Attempt to map one to one -> will NOT work
 mapper.CreateMap<PersonViewModel, PersonModel>()
