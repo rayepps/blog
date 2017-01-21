@@ -17,6 +17,11 @@ p, span, div {
   color: $rb-charcoal;
 }
 
+strong {
+  font-weight: bolder;
+  color: $rb-accent-color;
+}
+
 p {
   line-height:2em;
   font-size: 1rem;
