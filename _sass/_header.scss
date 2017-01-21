@@ -44,6 +44,21 @@ $rb-menu-drop-time: .5s;
 
     > i {
       color: #ffffff;
+      position: relative;
+
+      border: 0 solid transparent;
+      border-radius: 50%;
+
+      transition-property: left, right, box-shadow;
+      transition-duration: 210ms, 210ms, 1s;
+      transition-timing-function: ease-out, ease-out, ease;
+
+    }
+
+    &:active {
+      > i {
+        box-shadow: rgba(0,0,0,0.7) 1px 1px 3px;
+      }
     }
 
     @media #{$medium-up} {
@@ -141,4 +156,16 @@ body.rb-show-mobile-menu {
   //> section {
   //  display: none;
   //}
+}
+
+body.rb-animate-menu .rb-header-menu-icon-container {
+    $rb-animation-distance: 3px;
+    > i:first-child {
+        right: $rb-animation-distance;
+    }
+
+    > i:last-child {
+        left: $rb-animation-distance;
+    }
+
 }

@@ -36,10 +36,15 @@ let krow = {
             krow.$menu.css('height', menuHeight);
             window.setTimeout(function() {
                 krow.hideAll(krow.$getBodyElems());
-            }, 505); // CSS animation to change height takes 500ms, so 5ms after the menu is shown, we hide the page to lock scroll
+            }, 505); // CSS animation to change height takes 500ms, so 5ms after the menu is shown, we hide the page conents to lock scroll
         }
 
         krow.$body.toggleClass(krow.menuActiveClass);
+
+        krow.$body.addClass('rb-animate-menu');
+        window.setTimeout(function() {
+          krow.$body.removeClass('rb-animate-menu');
+        }, 253);
 
     },
 
