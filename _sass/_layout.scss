@@ -16,6 +16,14 @@
     }
 }
 
+.hidden {
+    display: none;
+}
+
+.collapse {
+    height: 0;
+}
+
 @mixin rb-wrapper {
     //max-width: -webkit-calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
     //max-width:         calc(#{$rb-content-width} - (#{$rb-global-page-margin} * 2));
