@@ -7,8 +7,8 @@ primary-image: "heading.jpg"
 photo_credit_url: "https://unsplash.com/search/loop?photo=FOsina4f7qM"
 author: ray_krow
 intro: > # "tag:"
-  Using while loops can get out of hand real quick, I'm sure we all know that.
-  The difficult part is stopping once your looping...and looping...and looping...
+  No matter what language your using while loops can get out of hand real quick, I'm sure we all know that.
+  The difficult part is stopping once your looping. Humor me, lets look at how to stop.
 tags:
   - title: C#
   - title: .NET

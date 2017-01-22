@@ -9,7 +9,8 @@ author: ray_krow
 intro: > # "tag:"
   Users don't want to be confused but they also don't want
   to be bombarded with so many directions its even more
-  confusing. Let's find a balance.
+  confusing. User experience and user interface design need to trust
+  the user, I'll show you why.
 tags:
   - title: UI/UX
   - title: Design
