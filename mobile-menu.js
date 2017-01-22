@@ -14,9 +14,15 @@
       menuEl: null,
       menuActiveClass: 'rb-show-mobile-menu',
       menuIconAnimationClass: 'rb-animate-menu',
-
+      hasBeenInit: false,
 
       init: function() {
+
+          console.warn('mobimen ready');
+
+          if (this.hasBeenInit) return;
+
+          this.hasBeenInit = true;
 
           this.mobileMenuIconEl = document.getElementById('mobile-menu-icon');
           this.menuEl = document.getElementById('mobile-menu');
@@ -105,7 +111,9 @@
 
   };
 
-  mobimen.init();
-
+  document.addEventListener("DOMContentLoaded", mobimen.init);
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+      mobimen.init();
+  }
 
 })();
