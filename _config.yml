@@ -19,6 +19,12 @@ source_url: "https://github.com/raykrow/raykrow.github.io"
 url: "http://krow.tech" # the base hostname & protocol for your site
 github_username: raykrow
 
+meta_description: >
+  I'm Ray Krow and this is my blog where I talk about web development
+  programming languages like C#, Python, Ruby, Javascript and
+  their most popular frameworks and libraries like angular, automapper,
+  .Net, Flask, Jkeyll and more.
+
 # Build settings
 markdown: kramdown
 repository: raykrow/raykrow.github.io
