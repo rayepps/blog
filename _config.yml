@@ -29,3 +29,6 @@ meta_description: >
 markdown: kramdown
 repository: raykrow/raykrow.github.io
 permalink: '/posts/:title'
+sass:
+  sass_dir: _sass
+  style: compressed
