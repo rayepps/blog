@@ -12,6 +12,12 @@ intro: > # "tag:"
   to be bombarded with so many directions its even more
   confusing. User experience and user interface design need to trust
   the user, I'll show you why.
+
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2017-01-21T12:49:30-05:00
+
 tags:
   - title: UI/UX
   - title: Design

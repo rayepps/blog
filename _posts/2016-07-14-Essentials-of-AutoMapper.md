@@ -11,6 +11,12 @@ intro: > # "tag:"
   C#'s AutoMapper is an amazing ORM library but it takes organization and
   a certain level of familiarity with its tooling to truly use it well. In
   this post well look at good practices and some hidden gems.
+
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2017-01-21T12:49:30-05:00
+
 tags:
   - title: C#
   - title: .NET
