@@ -5,7 +5,7 @@ dash-title: "Essentials-of-AutoMapper"
 date:   2016-07-14 00:47:03 -0700
 primary-image: "heading.jpg"
 photo_credit_url: "https://unsplash.com/search/map?photo=RFId0_7kep4"
-# photo_alt: "An ancient map"
+photo_alt: "An ancient map"
 author: ray_krow
 intro: > # "tag:"
   C#'s AutoMapper is an amazing ORM library but it takes organization and
