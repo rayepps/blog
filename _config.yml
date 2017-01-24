@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Ray Krow
+title: Ray Krow's Blog | A blog about web programming languages and creative software solutions
 email: raymondkrow@gmail.com
 description: > # "baseurl:"
   I'm Ray Krow, a tech obsessed software engineer, and this is my
@@ -19,7 +19,16 @@ source_url: "https://github.com/raykrow/raykrow.github.io"
 url: "http://krow.tech" # the base hostname & protocol for your site
 github_username: raykrow
 
+meta_description: >
+  I'm Ray Krow and this is my blog where I talk about web development
+  programming languages like C#, Python, Ruby, Javascript and
+  their most popular frameworks and libraries like angular, automapper,
+  .Net, Flask, Jkeyll and more.
+
 # Build settings
 markdown: kramdown
 repository: raykrow/raykrow.github.io
 permalink: '/posts/:title'
+sass:
+  sass_dir: _sass
+  style: compressed
