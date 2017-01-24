@@ -23,3 +23,5 @@ github_username: raykrow
 markdown: kramdown
 repository: raykrow/raykrow.github.io
 permalink: '/posts/:title'
+gems:
+  - jekyll-seo-tag
