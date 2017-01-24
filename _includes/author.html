@@ -9,7 +9,7 @@
             {% for social in author.social %}
             <li>
                 <a href="{{ social.url }}">
-                    <img class="rb-icon-interact rb-icon rb-icon-{{ social.name }}" src="/images/social/social_{{ social.image_name }}.png" />
+                    <amp-img height="" layout="responsive" class="rb-icon-interact rb-icon rb-icon-{{ social.name }}" src="/images/social/social_{{ social.image_name }}.png"></amp-img>
                 </a>
             </li>
             {% endfor %}

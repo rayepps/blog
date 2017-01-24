@@ -1,7 +1,7 @@
 
 
 <div class="rb-post-heading" style="background-image: url(/images/posts/{{ page.dash-title }}/{{ page.primary-image }});">
-    <img style="display:none;" src="/images/posts/{{ page.dash-title }}/{{ page.primary-image }}" alt="{{% if page.photo_alt != '' %}}{{ page.photo_alt }}{{% else %}}A beautiful header image{{% endif %}}" />
+    <amp-img layout="responsive" style="display:none;" src="/images/posts/{{ page.dash-title }}/{{ page.primary-image }}" alt="{{% if page.photo_alt != '' %}}{{ page.photo_alt }}{{% else %}}A beautiful header image{{% endif %}}"></amp-img>
     <div class="rb-post-heading-title">
         <h1 itemprop="name headline">{{ page.title }}</h1>
         <p>

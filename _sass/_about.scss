@@ -9,13 +9,13 @@ article {
 
     @include rb-wrapper();
 
-    > img {
+    > amp-img {
       height: 200px;
       width: auto;
       padding-top: 12px;
 
       @media #{$medium-up} {
-        width: calc(33.333333% - 8px) !important;
+        width: calc(33.333333% - 8px);
         float: left;
         &:nth-child(2) {
           padding-right: 12px;

@@ -4,13 +4,13 @@
 
     <a class="rb-header-title" href="{{ site.baseurl }}/">Ray Krow</a>
 
-    <div class="rb-header-menu-icon-container" id="mobile-menu-icon">
+    <button class="rb-header-menu-icon-container" id="mobile-menu-icon" onclick='!function(){"use strict";var e={mobileMenuIconEl:null,bodyEl:null,menuEl:null,menuActiveClass:"rb-show-mobile-menu",menuIconAnimationClass:"rb-animate-menu",hasBeenInit:!1,init:function(){console.warn("mobimen ready"),e.mobileMenuIconEl=document.getElementById("mobile-menu-icon"),e.menuEl=document.getElementById("mobile-menu"),e.bodyEl=document.getElementsByTagName("body")[0],window.mobimen=e},click:function(){window.mobimen||e.init(),window.mobimen.onMenuClick()},onMenuClick:function(){var n=e.hasClass(e.bodyEl,e.menuActiveClass);if(n)e.showHideBodyElems({show:!0}),e.menuEl.style.height="0px";else{var s=window.innerHeight-e.menuEl.offsetTop;e.removeClass(e.menuEl,"collapse"),e.menuEl.style.height=s+"px",window.setTimeout(function(){e.showHideBodyElems({show:!1})},505)}e.toggleClass(e.bodyEl,e.menuActiveClass),e.addClass(e.bodyEl,e.menuIconAnimationClass),window.setTimeout(function(){e.removeClass(e.bodyEl,e.menuIconAnimationClass)},253)},showHideBodyElems:function(n){for(var s=e.bodyEl.children,l=n.show,o=0;o<s.length;o++){var i=s[o];"header script".includes(i.nodeName.toLowerCase())||(l?e.removeClass(i,"hidden"):e.addClass(i,"hidden"))}},addClass:function(e,n){e.className.includes(n)||(e.className+=" "+n)},removeClass:function(e,n){e.className.includes(n)&&(e.className=e.className.replace(n,""))},toggleClass:function(n,s){e.hasClass(n,s)?e.removeClass(n,s):e.addClass(n,s)},hasClass:function(e,n){var s=" "+n+" ";return(" "+e.className+" ").replace(/[\n\t]/g," ").indexOf(s)>-1}};e.click()}();'>
 
-      <i class="fa fa-circle" aria-hidden="true"></i>
-      <i class="fa fa-circle" aria-hidden="true"></i>
-      <i class="fa fa-circle" aria-hidden="true"></i>
+      <i aria-hidden="true"></i>
+      <i aria-hidden="true"></i>
+      <i aria-hidden="true"></i>
 
-    </div>
+    </button>
 
     <div class="rb-header-menu">
 

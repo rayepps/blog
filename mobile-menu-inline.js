@@ -20,22 +20,26 @@
 
           console.warn('mobimen ready');
 
-          if (mobimen.hasBeenInit) return;
-
-          mobimen.hasBeenInit = true;
-
           mobimen.mobileMenuIconEl = document.getElementById('mobile-menu-icon');
           mobimen.menuEl = document.getElementById('mobile-menu');
-          mobimen.bodyEl = mobimen.first(document.getElementsByTagName('body'));
+          mobimen.bodyEl = document.getElementsByTagName('body')[0];
 
-          // Apply click listener to mobile menu icon
-          mobimen.mobileMenuIconEl.onclick = mobimen.onMenuClick;
+          window.mobimen = mobimen;
 
       },
 
+      click: function() {
+
+          if (!window.mobimen) mobimen.init();
+
+          window.mobimen.onMenuClick();
+
+      },
+
+
       onMenuClick: function(e) {
 
-          var menuIsVisible = mobimen.menuIsVisible();
+          var menuIsVisible = mobimen.hasClass(mobimen.bodyEl, mobimen.menuActiveClass);
 
           if (menuIsVisible) {
               // Its visible, hide it
@@ -55,7 +59,7 @@
 
           mobimen.addClass(mobimen.bodyEl, mobimen.menuIconAnimationClass);
           window.setTimeout(function() {
-            mobimen.removeClass(mobimen.bodyEl, mobimen.menuIconAnimationClass);
+              mobimen.removeClass(mobimen.bodyEl, mobimen.menuIconAnimationClass);
           }, 253);
 
       },
@@ -87,10 +91,6 @@
           el.className = el.className.replace(className, '');
       },
 
-      menuIsVisible: function() {
-          return mobimen.hasClass(mobimen.bodyEl, mobimen.menuActiveClass);
-      },
-
       toggleClass: function(el, className) {
           if (mobimen.hasClass(el, className)) {
               mobimen.removeClass(el, className);
@@ -102,18 +102,10 @@
       hasClass: function(el, classNameToCheck) {
           var className = ' ' + classNameToCheck + ' ';
           return ((' ' + el.className + ' ').replace(/[\n\t]/g, ' ').indexOf(className) > -1 );
-      },
-
-      first: function(arry) {
-          if (arry.length < 1) return null;
-          return arry[0];
       }
 
   };
 
-  document.addEventListener('DOMContentLoaded', mobimen.init);
-  if (document.readyState === 'complete' || document.readyState === 'interactive') {
-      mobimen.init();
-  }
+  mobimen.click();
 
 })();
