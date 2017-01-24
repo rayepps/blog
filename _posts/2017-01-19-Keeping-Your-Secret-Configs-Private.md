@@ -5,7 +5,12 @@ dash-title: "Keeping-Your-Secret-Config-Private"
 date:   2017-01-19 00:47:03 -0700
 primary-image: "heading.jpg"
 photo_credit_url: "//unsplash.com/photos/-id1HKapEbc"
+photo_alt: "An image of a cave with a warm light shinning out"
 author: ray_krow
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2017-01-21T12:49:30-05:00
 intro: > # "tag:"
   Where do you keep your database passwords for open source projects? I
   recommend a deep dark cave where nobody can ever find them. But how do

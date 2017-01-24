@@ -1,9 +1,10 @@
 
 
 <div class="rb-post-heading" style="background-image: url(/images/posts/{{ page.dash-title }}/{{ page.primary-image }});">
+    <img style="display:none;" src="/images/posts/{{ page.dash-title }}/{{ page.primary-image }}" alt="{{% if page.photo_alt != '' %}}{{ page.photo_alt }}{{% else %}}A beautiful header image{{% endif %}}" />
     <div class="rb-post-heading-title">
-        <h1 class="" itemprop="name headline">{{ page.title }}</h1>
-        <p class="">
+        <h1 itemprop="name headline">{{ page.title }}</h1>
+        <p>
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {{ page.date | date: "%b %-d %Y" }}
             </time>

@@ -5,10 +5,18 @@ dash-title: "Essentials-of-AutoMapper"
 date:   2016-07-14 00:47:03 -0700
 primary-image: "heading.jpg"
 photo_credit_url: "https://unsplash.com/search/map?photo=RFId0_7kep4"
+# photo_alt: "An ancient map"
 author: ray_krow
 intro: > # "tag:"
-  AutoMapper is an amazing tool but it takes organization and
-  a certain level of comfort with its tooling to truly use it well.
+  C#'s AutoMapper is an amazing ORM library but it takes organization and
+  a certain level of familiarity with its tooling to truly use it well. In
+  this post well look at good practices and some hidden gems.
+
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2017-01-21T12:49:30-05:00
+
 tags:
   - title: C#
   - title: .NET

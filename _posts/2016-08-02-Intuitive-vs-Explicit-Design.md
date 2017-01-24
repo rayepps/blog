@@ -5,11 +5,19 @@ dash-title: "Intuitive-vs-Explicit-Design"
 date:   2016-08-02 00:47:03 -0700
 primary-image: "heading.jpg"
 photo_credit_url: "https://unsplash.com/photos/DtDlVpy-vvQ"
+photo_alt: "An image of developer/designer workstation"
 author: ray_krow
 intro: > # "tag:"
   Users don't want to be confused but they also don't want
   to be bombarded with so many directions its even more
-  confusing. Let's find a balance.
+  confusing. User experience and user interface design need to trust
+  the user, I'll show you why.
+
+sitemap:
+  priority: 0.7
+  changefreq: 'monthly'
+  lastmod: 2017-01-21T12:49:30-05:00
+
 tags:
   - title: UI/UX
   - title: Design
