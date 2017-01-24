@@ -29,11 +29,10 @@ meta_description: >
 markdown: kramdown
 repository: raykrow/raykrow.github.io
 permalink: '/posts/:title'
-<<<<<<< HEAD
-gems:
-  - jekyll-seo-tag
-=======
+
+gem:
+  -jekyll-seo-tag
+
 sass:
   sass_dir: _sass
   style: compressed
->>>>>>> master
